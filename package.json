@@ -1,0 +1,37 @@
+{
+  "name": "chat_gpt__cmd_app",
+  "version": "1.0.0",
+  "description": "a command line utility project for using Chat GPT Open AI tool via CMD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js ",
+    "build": "npm run clean && tsc -p .",
+    "dev": "npm run clean && npm run watch",
+    "watch": "tsc-watch --onSuccess \"node ./dist/index.js\"",
+    "clean": "rimraf dist/"
+  },
+  "author": "Muneer Ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.6",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.4.5",
+    "@types/ora": "^3.2.0",
+    "@types/pino": "^7.0.5",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "clear": "^0.1.0",
+    "colors": "^1.4.0",
+    "csv": "^6.3.1",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.6.0",
+    "inquirer": "^8.2.6",
+    "openai": "^3.3.0",
+    "ora": "^3.4.0"
+  }
+}
