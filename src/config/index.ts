@@ -3,8 +3,8 @@ let apiKey = getEnv("API_KEY");
 export default {
   environment: getEnv("NODE_ENV"),
   app: {
-    header: getEnv("APP_HEADER_TITLE"),
-    footer: getEnv("APP_FOOTER_TITLE"),
+    header: getEnv("APP_HEADER_TITLE", "CHAT GPT App"),
+    footer: getEnv("APP_FOOTER_TITLE", "Finished"),
   },
   model: getEnv("MODEL", "gpt-4"),
   temperature: getEnv("TEMPERATURE", 0.7),
